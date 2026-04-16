@@ -30,6 +30,7 @@ CREATE TABLE students (
     FOREIGN KEY (user_id) REFERENCES users(id)
     ON DELETE CASCADE,
 
+
     FOREIGN KEY (class_id) REFERENCES classes(id)
     ON DELETE SET NULL
 );
