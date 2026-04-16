@@ -33,6 +33,7 @@ CREATE TABLE students (
 
 
 
+
     FOREIGN KEY (class_id) REFERENCES classes(id)
     ON DELETE SET NULL
 );
