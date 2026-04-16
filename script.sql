@@ -54,11 +54,30 @@ VALUES
 ('javascript' , 'programmation web' , 40 ,2);
 
 CREATE table students (
-    id INT AUTO_INCREMENT PRIMARY key,
+    id INT AUTO_INCREMENT PRIMARY kEY,
     dateOfBirth DATE,
     student_number VARCHAR(50) UNIQUE,
     user_id INT UNIQUE,
     class_id INT,
     FOREIGN KEY (user_id) REFERENCES users(id),
     FOREIGN KEY (class_id) REFERENCES classes(id)
+);INSERT INTO students(dateOfBirth, student_number , user_id , class_id)
+VALUES
+('2000-05-10' , 'STU001' , 3 , 1);
+
+CREATE TABLE enrollments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    enrolled_at DATE,
+    status VARCHAR(20),
+    student_id INT,
+    course_id INT,
+
+    FOREIGN KEY (student_id) REFERENCES students(id),
+    FOREIGN KEY (course_id) REFERENCES courses(id),
+
+    UNIQUE (student_id, course_id)
 );
+
+
+
+
