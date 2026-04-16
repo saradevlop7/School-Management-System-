@@ -20,12 +20,13 @@ CREATE TABLE users (
 
 INSERT INTO users (firstname, lastname ,email ,pasword ,role_id)
 VALUES
-('Khaoula' , 'Admin' ,'khawla1@gmail' ,'123456' ,1),
-('hamza' , 'Prof' ,'hamza2@gmail' ,'456789' ,2),
-('bilal' , 'Prof' ,'bilal3@gmail' ,'135790' ,3),
-('sara' , 'Student' ,'sara1@gmail' ,'325498' ,1);
 
-
+INSERT INTO users (firstname, lastname, email, pasword, role_id)
+VALUES
+('amal', 'Prof', 'amal2@gmail.com', '456789', 2),
+('laila', 'Student', 'lailal3@gmail.com', '135790', 3),
+('sara', 'Admin', 'sara1@gmail.com', '325498', 1),
+('salah', 'prof', 'salah1@gmail.com', '325498', 2);
 CREATE TABLE classes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR (100) NOT NULL,
