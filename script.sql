@@ -5,8 +5,6 @@
     label VARCHAR (50) NOT NULL
 );
 
-INSERT INTO roles (label)
-VALUES('Admin'),('Prof'),('Student');
 
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -18,15 +16,9 @@ CREATE TABLE users (
     FOREIGN KEY (role_id) REFERENCES roles(id)
 );
 
-INSERT INTO users (firstname, lastname ,email ,pasword ,role_id)
-VALUES
 
-INSERT INTO users (firstname, lastname, email, pasword, role_id)
-VALUES
-('amal', 'Prof', 'amal2@gmail.com', '456789', 2),
-('laila', 'Student', 'lailal3@gmail.com', '135790', 3),
-('sara', 'Admin', 'sara1@gmail.com', '325498', 1),
-('salah', 'prof', 'salah1@gmail.com', '325498', 2);
+
+
 CREATE TABLE classes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR (100) NOT NULL,
@@ -34,10 +26,7 @@ CREATE TABLE classes (
 );
 
 
-INSERT INTO classes (name , classroom_number)
-VALUES 
-('Développeur web 2026' , 'a1'),
-('Développeur web 2025' , 'b2');
+
 
 CREATE TABLE courses (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -48,10 +37,7 @@ CREATE TABLE courses (
      FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
-INSERT INTO courses ( title ,description ,total_hours ,user_id)
-VALUES
-('html & css' , 'introduction au web' , 30 ,2),
-('javascript' , 'programmation web' , 40 ,2);
+
 
 CREATE table students (
     id INT AUTO_INCREMENT PRIMARY kEY,
@@ -61,9 +47,7 @@ CREATE table students (
     class_id INT,
     FOREIGN KEY (user_id) REFERENCES users(id),
     FOREIGN KEY (class_id) REFERENCES classes(id)
-);INSERT INTO students(dateOfBirth, student_number , user_id , class_id)
-VALUES
-('2000-05-10' , 'STU001' , 3 , 1);
+
 
 CREATE TABLE enrollments (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -80,4 +64,4 @@ CREATE TABLE enrollments (
 
 
 
-
+qqq
