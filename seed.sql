@@ -22,3 +22,8 @@ INSERT INTO students(dateOfBirth, student_number , user_id , class_id)
 VALUES
 ('2000-05-10' , 'STU001' , 3 , 1);
 
+
+INSERT INTO enrollments (enrolled_at , status , student_id , course_id)
+VALUES 
+('2026-04-01' , 'actif' , 3, 2),
+('2026-04-02' , 'actif' , 1 , 3);
