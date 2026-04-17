@@ -8,3 +8,8 @@ VALUES
 ('sara', 'Admin', 'sara1@gmail.com', '325498', 1),
 ('salah', 'prof', 'salah1@gmail.com', '325498', 2);
 
+INSERT INTO classes (name , classroom_number)
+VALUES 
+('Développeur web 2026' , 'a1'),
+('Développeur web 2025' , 'b2');
+
