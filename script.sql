@@ -47,7 +47,7 @@ CREATE table students (
     class_id INT,
     FOREIGN KEY (user_id) REFERENCES users(id),
     FOREIGN KEY (class_id) REFERENCES classes(id)
-
+);
 
 CREATE TABLE enrollments (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -64,4 +64,3 @@ CREATE TABLE enrollments (
 
 
 
-qqq
