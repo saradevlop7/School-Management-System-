@@ -13,3 +13,8 @@ VALUES
 ('Développeur web 2026' , 'a1'),
 ('Développeur web 2025' , 'b2');
 
+INSERT INTO courses ( title ,description ,total_hours ,user_id)
+VALUES
+('html & css' , 'introduction au web' , 30 ,2),
+('javascript' , 'programmation web' , 40 ,2);
+
